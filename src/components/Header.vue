@@ -2,7 +2,7 @@
 
 <div class="header">
   <h1>Vue js Practice session</h1>
-  <p>Topic : Nested Components</p>
+  <p>Topic : Props</p>
 
 </div>
 </template>

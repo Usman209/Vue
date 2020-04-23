@@ -17,15 +17,13 @@
 </template>
 <script>
 export default {
+    
+    props:['HeaderText'],
+
     data(){
 
         return {
        
-        HeaderText:[
-            {name:'mevn' ,backend:'Node', front:"Vue",show:false},
-            {name:'mern' ,backend:'Node', front:"React",show:false},
-            {name:'mean' ,backend:'Node', front:"Angular",show:false}
-        ]
 
         }
     }

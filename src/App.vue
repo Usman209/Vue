@@ -8,7 +8,7 @@
   <!-- <codey> </codey> -->
   <!-- <codeylocal> </codeylocal> -->
 
-<header-text></header-text>
+<header-text v-bind:HeaderText="HeaderText"></header-text>
 
 
 <app-footer> </app-footer>
@@ -35,7 +35,11 @@ export default {
   
 data(){
   return {
-    title:'This is firs title of vue js practice '
+   HeaderText:[
+    {name:'mevn' ,backend:'Node', front:"Vue",show:false},
+    {name:'mern' ,backend:'Node', front:"React",show:false},
+    {name:'mean' ,backend:'Node', front:"Angular",show:false}
+]
   }
 } ,
 methods:{

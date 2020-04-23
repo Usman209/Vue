@@ -2,14 +2,26 @@
 <template>
 <!-- 1. this is root component --> 
 <div>
-  <h1>{{title}}</h1>
+    <header1> </header1>
+  <!-- <h1>{{title}}</h1> -->
   <p>{{welcome()}}</p>
+  <codey> </codey>
+  <codeylocal> </codeylocal>
+
 </div>
 </template>
 
 <script>
 
+import CodeLocal from './components/CodeLocal'
+
 export default {
+
+ components:{
+
+   'codeylocal':CodeLocal
+
+ } ,
   
 data(){
   return {
@@ -27,12 +39,10 @@ methods:{
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1 {
   text-align: center;
-  color: #2c3e50;
+  color: #05700e;
   margin-top: 60px;
 }
+
 </style>

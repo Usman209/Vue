@@ -19,8 +19,8 @@ export default {
 
 <style scoped>
 
-ul {
-  background: #0ab48f;
+li {
+  color: #0ab48f;
   padding: 20px;
 }
 </style>

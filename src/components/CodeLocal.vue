@@ -20,7 +20,7 @@ export default {
 <style scoped>
 
 ul {
-  background: #3399ff;
-  padding: 20px;
+  color: #3399ff;
+  padding: 40px;
 }
 </style>

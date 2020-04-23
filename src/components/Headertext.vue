@@ -17,8 +17,14 @@
 </template>
 <script>
 export default {
-    
-    props:['HeaderText'],
+
+    props:{
+      
+      HeaderText :{
+        type:Array,
+       required:true
+      },
+    },
 
     data(){
 

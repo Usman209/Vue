@@ -1,8 +1,8 @@
 <template>
 
 <div class="header">
-  <h1>Header</h1>
-  <p>My supercool header</p>
+  <h1>Vue js Practice session</h1>
+  <p>Topic : Nested Components</p>
 
 </div>
 </template>
@@ -18,7 +18,7 @@ export default {
 
 <style >
 .header {
-  padding: 60px;
+  padding: 10px;
   text-align: center;
   background: #1abc9c;
   color: white;

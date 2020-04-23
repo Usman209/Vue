@@ -4,22 +4,32 @@
 <div>
     <header1> </header1>
   <!-- <h1>{{title}}</h1> -->
-  <p>{{welcome()}}</p>
-  <codey> </codey>
-  <codeylocal> </codeylocal>
+  <!-- <p>{{welcome()}}</p> -->
+  <!-- <codey> </codey> -->
+  <!-- <codeylocal> </codeylocal> -->
+
+<header-text></header-text>
+
+
+<app-footer> </app-footer>
 
 </div>
 </template>
 
 <script>
 
-import CodeLocal from './components/CodeLocal'
+// import CodeLocal from './components/CodeLocal'
+import footer from './components/footer'
+import HeaderText from './components/Headertext'
+
 
 export default {
 
  components:{
+   'app-footer':footer,
+   'header-text':HeaderText,
 
-   'codeylocal':CodeLocal
+  //  'codeylocal':CodeLocal
 
  } ,
   

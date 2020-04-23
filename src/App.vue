@@ -1,18 +1,28 @@
+
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<!-- 1. this is root component --> 
+<div>
+  <h1>{{title}}</h1>
+  <p>{{welcome()}}</p>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  
+data(){
+  return {
+    title:'This is firs title of vue js practice '
   }
+} ,
+methods:{
+  welcome:function(){
+    return 'welcome '
+  }
+}
+  
+  
 }
 </script>
 

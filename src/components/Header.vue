@@ -23,7 +23,8 @@ props:{
     },
     methods:{
       changeTitle:function(){
-        this.title="Title updated"
+        // this.title="Title updated"
+        this.$emit('changeTitle','Title Updated')
       }
     }
     

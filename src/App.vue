@@ -2,13 +2,13 @@
 <template>
 <!-- 1. this is root component --> 
 <div>
-    <header1 v-bind:title="title"> </header1>
+    <header1 v-bind:title="title" v-on:changeTitle="updateTitle($event)" > </header1>
   <!-- <h1>{{title}}</h1> -->
   <!-- <p>{{welcome()}}</p> -->
   <!-- <codey> </codey> -->
   <!-- <codeylocal> </codeylocal> -->
 
-<header-text v-bind:HeaderText="HeaderText"></header-text>
+<header-text v-bind:HeaderText="HeaderText" ></header-text>
 <!-- <hr> -->
 <!-- <header-text v-bind:HeaderText="HeaderText"></header-text> -->
 
@@ -45,13 +45,17 @@ data(){
   title:"vue found error"
   }
 } ,
-// methods:{
+methods:{
+
   welcome:function(){
     return 'welcome '
+  },
+  updateTitle:function(updateTitle){
+    this.title=updateTitle
   }
-// }
-  //  
 }
+   
+ }
 </script>
 
 <style>

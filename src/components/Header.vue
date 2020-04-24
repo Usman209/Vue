@@ -2,13 +2,14 @@
 
 <div class="header">
   <h1>Vue js Practice session</h1>
-  <h2>{{title}}</h2>
+  <h2 v-on:click="changeTitle">{{title}}</h2>
   <p>Topic : Primitive vs Reference Types</p>
 
 </div>
 </template>
 
 <script>
+
 export default {
 
 props:{
@@ -19,6 +20,11 @@ props:{
 
     data(){
         return 'testing'
+    },
+    methods:{
+      changeTitle:function(){
+        this.title="Title updated"
+      }
     }
     
 }

@@ -1,5 +1,6 @@
 <template>
 
+
 <div id="HeaderText">
 <ul>
     <!-- <li v-for="text in HeaderText" :key="text" v-on:click="text.show=!text.show">  -->

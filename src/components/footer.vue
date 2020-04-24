@@ -1,11 +1,23 @@
 <template>
-    <div class="footer">
-  <p>Footer</p>
+<div class="footer">
+<p>{{title}}</p>
+
 </div>
+
 
 </template>
 <script>
 export default {
+
+props:{
+    title:{
+        type:String
+    }
+},
+
+    data(){
+        return 'testing 2'
+    }
     
 }
 </script>
@@ -21,4 +33,5 @@ export default {
    color: white;
    text-align: center;
 }
+
 </style>

@@ -2,16 +2,18 @@
 <template>
 <!-- 1. this is root component --> 
 <div>
-    <header1> </header1>
+    <header1 v-bind:title="title"> </header1>
   <!-- <h1>{{title}}</h1> -->
   <!-- <p>{{welcome()}}</p> -->
   <!-- <codey> </codey> -->
   <!-- <codeylocal> </codeylocal> -->
 
 <header-text v-bind:HeaderText="HeaderText"></header-text>
+<!-- <hr> -->
+<!-- <header-text v-bind:HeaderText="HeaderText"></header-text> -->
 
 
-<app-footer> </app-footer>
+<app-footer v-bind:title="title"  > </app-footer>
 
 </div>
 </template>
@@ -39,16 +41,16 @@ data(){
     {name:'mevn' ,backend:'Node', front:"Vue",show:false},
     {name:'mern' ,backend:'Node', front:"React",show:false},
     {name:'mean' ,backend:'Node', front:"Angular",show:false}
-]
+],
+  title:"vue found error"
   }
 } ,
-methods:{
+// methods:{
   welcome:function(){
     return 'welcome '
   }
-}
-  
-  
+// }
+  //  
 }
 </script>
 

@@ -11,6 +11,8 @@
     </li>
 </ul>
 
+<button v-on:click="deleted"> Delete </button>
+
 </div>
 
 
@@ -30,8 +32,15 @@ export default {
 
         return {
        
-
         }
+        
+    },
+    methods:{
+      
+      deleted:function(){
+          this.HeaderText.pop();
+      }
+
     }
     
 }

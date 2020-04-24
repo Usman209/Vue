@@ -2,13 +2,21 @@
 
 <div class="header">
   <h1>Vue js Practice session</h1>
-  <p>Topic : Props</p>
+  <h2>{{title}}</h2>
+  <p>Topic : Primitive vs Reference Types</p>
 
 </div>
 </template>
 
 <script>
 export default {
+
+props:{
+    title:{
+        type:String
+    }
+},
+
     data(){
         return 'testing'
     }

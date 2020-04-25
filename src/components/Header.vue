@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import {bus} from '../main'
 
 export default {
 
@@ -24,7 +25,11 @@ props:{
     methods:{
       changeTitle:function(){
         // this.title="Title updated"
-        this.$emit('changeTitle','Title Updated')
+        // this.$emit('changeTitle','Title Updated') 
+        // emit event from one child to other throught main.js .
+        this.title="Ttitle update from child to child", // we are emiting from header . change title just for demonstration . 
+        bus.$emit("changeTitle","Ttitle update from child to child ")
+
       }
     }
     

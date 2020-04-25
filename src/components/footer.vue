@@ -7,6 +7,8 @@
 
 </template>
 <script>
+import {bus} from '../main'
+
 export default {
 
 props:{
@@ -17,6 +19,12 @@ props:{
 
     data(){
         return 'testing 2'
+    },
+    created(){
+        bus.$on('changeTitle', (data)=>{
+            this.title=data
+
+        })
     }
     
 }

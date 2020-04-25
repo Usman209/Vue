@@ -8,6 +8,26 @@
   <!-- <codey> </codey> -->
   <!-- <codeylocal> </codeylocal> -->
 
+<div>
+  <helperForm>
+    <div slot="form-header">
+   <h3>Title of the Form</h3>
+   <p>text area</p>
+    </div>
+        <div slot="form-field">
+    <input type="text" placeholder="name" required>
+    <input type="text" placeholder="password" required>
+
+        </div>
+                <div slot="form-control">
+                <button v-on:click="submit">Submit</button>
+                </div>
+
+
+  </helperForm>
+</div>
+
+
 <header-text v-bind:HeaderText="HeaderText" ></header-text>
 <!-- <hr> -->
 <!-- <header-text v-bind:HeaderText="HeaderText"></header-text> -->
@@ -23,14 +43,14 @@
 // import CodeLocal from './components/CodeLocal'
 import footer from './components/footer'
 import HeaderText from './components/Headertext'
-
+import helperForm from './components/helperForm'
 
 export default {
 
  components:{
    'app-footer':footer,
    'header-text':HeaderText,
-
+   'helperForm':helperForm
   //  'codeylocal':CodeLocal
 
  } ,
